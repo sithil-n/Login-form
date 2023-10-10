@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(bike.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            height: auto;
+        }
+
+
+        form{
+            text-align: center;
+            backdrop-filter:blur(20px);
+            padding: 50px 50px;
+            width: fit-content;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 30px;
+            font-size: 170%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+            color: white;
+        }
+        H1{   
+            font-size: 300%;
+            color: brown;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .btn input{
+            margin: 20px;
+            text-align: center;
+            background-color: rgb(149, 255, 0);
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 40px;
+            width: 100px;
+            border: none;
+            padding: auto;
+            font-size: 17px;
+        }
+
+        .h1_div{
+
+            margin-top: 60px;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="h1_div">
+        <H1>Profile</H1>
+    </div>
+    <br>
+<form name="form 1" method="post" action="detail.php">
+    Name:&nbsp;<input type="text" name="name"><br><br>
+
+    Age:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="age"><br><br>
+
+    Email:&nbsp;<input type="text" name="email"><br><br>
+
+    Gender:&nbsp;<select name="gender">
+        <option>Male</option>
+        <option>Female</option>
+        </select>&nbsp;&nbsp;
+
+    Country:&nbsp;<select name="country">
+
+        <option>Sri Lanka</option>
+        <option>India</option>
+        <option>KSA</option>
+        <option>UAE</option>
+        <option>UK</option>
+        </select>
+        <br><br>
+        Comments <br> <textarea cols="100" rows="3" name="com"></textarea>
+        <br><br>
+
+    
+    Favorite Browsers <br><br> <input type="checkbox" name="chrome" value="Google Chrome">Google Chrome <br>
+    <input type="checkbox" name="ff" value="Fire Fox">Fire Fox <br>
+    <input type="checkbox" name="ope" value="Opera">Opera <br>
+        <div class="btn">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
